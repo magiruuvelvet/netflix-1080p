@@ -1,5 +1,7 @@
 # netflix-1080p
-Chrome extension to play Netflix in 1080p
+~~Chrome extension to play Netflix in 1080p~~
+
+Mirror for [magiruuvelvet/LightweightQtDRMStreamViewer](https://github.com/magiruuvelvet/LightweightQtDRMStreamViewer)
 
 # How it works
 
