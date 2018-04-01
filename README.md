@@ -23,6 +23,18 @@ What it is doing is testing your User-agent for the "CrOS" string anywhere in it
 
 After reading this you think the easy solution would be to just change the User-agent to make it contain the string "CrOS" right? Not that simple. ChromeOS apparently has a different DRM implementation than chrome, even though both use Widevine. I could never get it to work when I tried, Netflix always threw license errors. The next easiest thing to do is just delete the conditional to append 1080p and just make the 1080p profile apart of the regular profiles (`this.oo = [x.V.vA, x.V.wA];` -> `this.oo = [x.V.vA, x.V.wA, x.V.TH];`). This works perfectly.
 
+# How to use
+
+Add this lines to your Netflix provider files once you read the documentation.
+
+```
+urlInterceptor:true
+urlInterceptorPattern:(.*\:\/\/assets\.nflxext\.com\/.*\/ffe\/player\/html\/.*)|(.*\:\/\/www\.assets\.nflxext\.com\/.*\/ffe\/player\/html\/.*)
+urlInterceptorTarget:https://rawgit.com/magiruuvelvet/netflix-1080p/master/[file].js
+```
+
+Replace `[file]` with one of the files listed above. The ones with the 1080p status are confirmed to be working.
+
 # Why?
 
 Why not.
