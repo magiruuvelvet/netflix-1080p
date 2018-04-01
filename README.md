@@ -3,6 +3,10 @@
 
 Mirror for [magiruuvelvet/LightweightQtDRMStreamViewer](https://github.com/magiruuvelvet/LightweightQtDRMStreamViewer)
 
+- `cadmium-playercore-5.0008.544.011-1080p.js`: 1080p patched
+- `cadmium-playercore-5.0008.572.011-1080p.js`: 1080p patched
+- `cadmium-playercore-5.0008.864.051.js`: ??? (untested)
+
 # How it works
 
 The core of Netflix playback lies in JavaScript: specifically its "cadmium playercore" JS. The way Netflix (poorly) enforces 1080p to only be played back on ChromeOS devices is through these lines of JavaScript:
