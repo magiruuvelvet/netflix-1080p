@@ -23,8 +23,6 @@ What it is doing is testing your User-agent for the "CrOS" string anywhere in it
 
 After reading this you think the easy solution would be to just change the User-agent to make it contain the string "CrOS" right? Not that simple. ChromeOS apparently has a different DRM implementation than chrome, even though both use Widevine. I could never get it to work when I tried, Netflix always threw license errors. The next easiest thing to do is just delete the conditional to append 1080p and just make the 1080p profile apart of the regular profiles (`this.oo = [x.V.vA, x.V.wA];` -> `this.oo = [x.V.vA, x.V.wA, x.V.TH];`). This works perfectly.
 
-All the Chrome extension has to do is redirect all requests to Netflix's playercore to the modified one it has in the root directory. That's it. A two line modification.
-
 # Why?
 
 Why not.
@@ -34,5 +32,3 @@ Why not.
 This may raise your CPU usage since Netflix was never intended to be played back in 1080p on Chrome.
 
 Make sure to clear your browser cache, as the cached playercore will override the modified one and you will not be able to play 1080p.
-
-Chrome Webstore link: https://chrome.google.com/webstore/detail/netflix-1080p/cankofcoohmbhfpcemhmaaeennfbnmgp
