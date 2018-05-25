@@ -6,6 +6,7 @@ Mirror for [magiruuvelvet/LightweightQtDRMStreamViewer](https://github.com/magir
 - `cadmium-playercore-5.0008.544.011-1080p.js`: 1080p patched
 - `cadmium-playercore-5.0008.572.011-1080p.js`: 1080p patched
 - `cadmium-playercore-5.0008.864.051.js`: ??? (untested)
+- `cadmium-playercore-6.0009.325.011-1080p.js`: 1080p patched
 
 # How it works
 
