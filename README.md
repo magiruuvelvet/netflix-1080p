@@ -31,7 +31,7 @@ Add this lines to your Netflix provider files once you read the documentation.
 ```
 urlInterceptor:true
 urlInterceptorPattern:(.*\:\/\/assets\.nflxext\.com\/.*\/ffe\/player\/html\/.*)|(.*\:\/\/www\.assets\.nflxext\.com\/.*\/ffe\/player\/html\/.*)
-urlInterceptorTarget:https://rawgit.com/magiruuvelvet/netflix-1080p/master/[file].js
+urlInterceptorTarget:https://cdn.jsdelivr.net/gh/magiruuvelvet/netflix-1080p@master/[file].js
 ```
 
 Replace `[file]` with one of the files listed above. The ones with the 1080p status are confirmed to be working.
